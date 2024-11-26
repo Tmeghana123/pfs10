@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+        font-size:20px;
+        background-color:yellow;
+     } 
+     @media(orientation:portrait){
+       body{
+        font-size:25px;
+        background-color:blue;
+       } 
+     }
+     @media(orientation:landscape){
+       body{
+        font-size:30px;
+        background-color:pink;
+       } 
+     } 
+     .styled-button:hover{
+        background-color:violet;
+     }
+     .styled-button:focus{
+        background-color:skyblue;
+     }
+     .styled-button:active{
+        background-color:palegreen;
+     } 
+     .meghanareddy::before{
+        content:"#";
+        color:black
+     }
+     .meghanareddy::after{
+        content:"#";
+        color:white
+     }
+     .meghanareddy::firstletter{
+        color:gray
+     }
+     .meghanareddy::firstline{
+        color:white
+     }
+    </style>
+</head>
+<body>
+    <h1 class="meghanareddy">RAM POTHINENI</h1>
+    <p>He is an energetic star</p>
+    <button class="styled-button">submit</button>    
+</body>
+</html>
